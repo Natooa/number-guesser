@@ -1,0 +1,13 @@
+from random import *
+num_ = randint(1, 100)
+while True:
+    n = int(input('Введите число:'))
+    if n > num_:
+        print("Слишком много, попробуйте еще раз")
+        continue
+    elif n < num_:
+        print('Слишком мало, попробуйте еще раз')
+        continue
+    elif n == num_:
+        print('Вы угадали, поздравляем!')
+        break
